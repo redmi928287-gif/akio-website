@@ -1,0 +1,43 @@
+{
+  "name": "comic-website",
+  "version": "1.0.0",
+  "description": "A modern comic website with admin mode, comic management, and user dashboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "echo 'Deploy to Netlify by dragging folder to Netlify dashboard'"
+  },
+  "keywords": [
+    "comic",
+    "website",
+    "admin",
+    "dashboard",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "@beast_is_kum",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/comic-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/comic-website/issues"
+  },
+  "homepage": "https://your-comic-website.netlify.app",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 

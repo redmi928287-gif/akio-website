@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics - Akio Comic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Myanmar:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">📖</div>
+            <h1>Akio Comic</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-tab">🏠 Home</a>
+            <a href="comics.html" class="nav-tab active">📚 Comics</a>
+            <a href="#admin" id="adminLink" style="display: none;">Admin Panel</a>
+            <div class="clock-display" id="clockDisplay">
+                <i class="fas fa-clock"></i>
+                <span id="currentTime">--:--:--</span>
+            </div>
+            <button id="modeToggle" class="mode-btn">User Mode</button>
+            <button id="contactAdmin" class="contact-btn">Contact Admin</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Comics Section -->
+        <section id="comics" class="comics">
+            <h2>Latest Comics</h2>
+            <div class="comics-grid" id="comicsGrid">
+                <!-- Comics will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Akio Comic. All rights reserved.</p>
+    </footer>
+
+    <script src="supabase-config.js"></script>
+    <script src="supabase-service.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
