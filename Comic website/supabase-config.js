@@ -11,4 +11,11 @@ const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 window.supabase = supabase;
 
 // Test connection
-console.log('Supabase client initialized:', !!supabase); 
+console.log('Supabase client initialized:', !!supabase);
+
+// Instructions for setup:
+// 1. Go to https://supabase.com/dashboard
+// 2. Create new project: akio-comic-website
+// 3. Go to Settings > API
+// 4. Copy Project URL and anon public key
+// 5. Replace YOUR_SUPABASE_URL and YOUR_SUPABASE_ANON_KEY above 
